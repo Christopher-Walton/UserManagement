@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BrilliantEngineeringWS.Messaging.Contracts.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BrilliantEngineeringWS.Messaging.Contracts.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EmailData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsHtml" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Recipients" nillable="true" type="tns:ArrayOfRecipientData" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailData" nillable="true" type="tns:EmailData" />
+  <xs:complexType name="ArrayOfRecipientData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecipientData" nillable="true" type="tns:RecipientData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecipientData" nillable="true" type="tns:ArrayOfRecipientData" />
+  <xs:complexType name="RecipientData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecipientData" nillable="true" type="tns:RecipientData" />
+</xs:schema>

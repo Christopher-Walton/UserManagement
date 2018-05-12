@@ -1,0 +1,6 @@
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\bin\ExternalGateway-QA\UserManagementAPI.Common.dll.config
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\bin\ExternalGateway-QA\UserManagementAPI.Common.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\bin\ExternalGateway-QA\UserManagementAPI.Common.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\obj\ExternalGateway-QA\UserManagementAPI.Common.csprojResolveAssemblyReference.cache
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\obj\ExternalGateway-QA\UserManagementAPI.Common.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\obj\ExternalGateway-QA\UserManagementAPI.Common.pdb

@@ -1,0 +1,375 @@
+﻿@model UserManagementAPI.Common.Models.PayAndGoRegistration
+
+@{
+    ViewBag.Title = "Signup For Pay & Go";
+}
+
+<script>
+    $(document).ready(function () {
+        $('.input-validation-error').parents('.form-group').addClass('has-error');
+        $('.field-validation-error').addClass('text-danger');
+
+        //initialize tooltips
+        $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+
+        //initialize phone masking
+        $('.phone-number-formatting').mask('000-000-0000');
+
+        $('.trn').mask('000-000-000');
+
+        $.toggleShowPassword({
+            field: '#txtPwd',
+            confirmField: "#txtConfirmPwd",
+            control: '#chkPwd'
+        });
+    });
+</script>
+<br />
+<span class="testplace"><img src="~/Download/payAndGo_LOGO_TINY.jpg"> Registration</span>
+
+@using (Html.BeginForm("SignUpPayAndGo", "SignUp", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="has-error">
+        @Html.ValidationSummary()
+    </div>
+
+    <fieldset>
+       
+        @*<legend>Individual Information</legend>*@
+        <div class="pull-right">
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.Email)
+            @Html.TextBoxFor(model => model.PrimaryUser.Email, new
+             {
+                 @class = "form-control",
+                 @data_toggle = "tooltip",
+                 @data_placement = "right",
+                 @title = "Must be a valid email address in the form: " +
+                          "johnbrown@gmail.com",
+                 @placeholder = "johnbrown@gmail.com"
+             })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.Email)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.Username)
+            @Html.TextBoxFor(model => model.PrimaryUser.Username, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.Username)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.FirstName)
+            @Html.TextBoxFor(model => model.PrimaryUser.FirstName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.FirstName)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.LastName)
+            @Html.TextBoxFor(model => model.PrimaryUser.LastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.LastName)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.MobileNumber)
+
+            @Html.TextBoxFor(model => model.PrimaryUser.MobileNumber, new
+            {
+                @class = "form-control phone-number-formatting",
+                @placeholder = "876-345-1234",
+                @data_toggle = "tooltip",
+                @data_placement = "right",
+                @title = "Must be a valid phone number and must be in the form ###-###-####"
+            })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.MobileNumber)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address)
+            @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.TRN)
+            @Html.TextBoxFor(model => model.TRN, new
+             {
+                 @class = "form-control trn",
+                 @placeholder = "123-456-789",
+                 @data_toggle = "tooltip",
+                 @data_placement = "right",
+                 @title = "Must be a valid TRN and in the format ###-###-###"
+             })
+            @Html.ValidationMessageFor(model => model.TRN)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.Password)
+            @Html.PasswordFor(model => model.PrimaryUser.Password, new
+                {
+                    @class = "form-control",
+                    @data_toggle = "tooltip",
+                    @data_html = "true",
+                    @data_placement = "right",
+                    @title = "Password must satisfy the following conditions:<ul>" +
+                             "<li>contain at least one uppercase letter</li>" +
+                             "<li>contain at least one digit</li>" +
+                             "<li>should be at least eight characters long</li></ul>",
+                    @id = "txtPwd"
+                })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.Password)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.ConfirmPassword)
+            @Html.PasswordFor(model => model.PrimaryUser.ConfirmPassword, new
+            {
+                @class = "form-control",
+                @data_toggle = "tooltip",
+                @data_html = "true",
+                @data_placement = "right",
+                @title = "Password must satisfy the following conditions:<ul>" +
+                              "<li>contain at least one uppercase letter</li>" +
+                              "<li>contain at least one digit</li>" +
+                              "<li>should be at least eight characters long</li></ul>",
+                @id = "txtConfirmPwd"
+            })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.ConfirmPassword)
+        </div>
+        <div class="checkbox">
+            <label>
+                <input id="chkPwd" type="checkbox"> Show Passwords
+            </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h4>Pay and Go Service Terms And Conditions</h4>
+        <textarea rows="5" cols="55" readonly="readonly">TERMS & CONDITIONS
+PLEASE READ CAREFULLY PRIOR TO USING BEL’S PAY ‘N GO SERVICE
+1. Acceptance of Terms and Conditions
+Use of this website (“Website”) and/or of BEL’s Pay ‘N Go Service is governed by the terms and conditions
+contained herein (“Terms”). These Terms are legally binding on all users of this Website and/or Service and constitute
+a legally binding agreement between you (“User” or “Importer”) and BEL. By using the Website and/or Service, the
+User expressly and irrevocably agrees to the Terms and to abide by the Terms. These Terms currently list the
+Company’s current policies and terms and conditions, but, as noted below, the Terms may be adjusted from time to
+time at the Company’s discretion. If the User of this Service and/or Website does not agree with any of these Terms,
+the User may not, under any circumstances, utilize the Website and/or Service.
+2. Intellectual Property Rights
+2.1 Ownership
+All content, text, images, data, information and other material displayed, available or present on this Website
+(“Content”), including any intellectual property rights in such Content (including without limitation trademarks and
+copyrights) or other intellectual property rights associated with the Website (hereinafter “Intellectual Property
+Rights”), are the property of the Company, its licensors, or designated owners and are protected by applicable
+intellectual property laws. User should assume that everything User sees or reads on this Website is protected by
+intellectual property rights, unless otherwise noted, and may not be used without the written permission of the
+Company or the respective owner except as provided in these Terms.
+2.2 Authorized and Prohibited Uses
+User may access, use, and display this Website on a computer, or mobile device and download and print copies of the
+Content only for non-commercial, informational, personal use, without modification or alteration in any way, and only
+so long as User complies with these Terms and all applicable laws. If User violates these Terms and/or any applicable
+laws, your permission to use the Service or Website terminates. User may not otherwise reproduce, sell, publish,
+distribute, modify, display, or use any Content or portion of this Website without the prior written permission of the
+Company; provided, however, if the functionality of the Website permits the e-mailing of certain Content or a link
+through the use of an “e-mail to a friend” (or similar) icon, User may send that particular Content to others by e-mail.
+User will not infringe upon any Intellectual Property Rights or remove or modify related intellectual property and/or
+proprietary notices contained in this Website or the Content.
+2.3 Registration and Passwords
+The Company may or may not at times require a User to have a password and provide registration details to access
+this Website or portions of this Website. If the Company does require a password and registration details, it shall be a
+condition of use of this Website that all the details User provides are correct, current, and complete. If the Company
+believes that the details are not correct, current, or complete, the Company will have the right to refuse User, the use
+of the Service, access to the Website, or any of its resources, and to suspend and/or terminate User´s account. User is
+responsible for maintaining the confidentiality of any password(s) and registration details User is given to access this
+Website, and User is fully responsible for all activities that occur under User´s password(s) and/or registration details.
+User agrees to notify the Company immediately of any unauthorized use of User’s password(s) and/or registration
+details. The Company reserves the absolute right, in its sole discretion, not to issue a password to any person or entity.
+3. Website and Registration Administration
+3.1 Website and Other Information
+As a convenience to User, the Company may in its sole discretion include certain content, tools, and resources on this
+Website regarding Customs, and other third parties that may affect the use of the Service, and/or that may influence
+the final cost of the Service. The Company has no obligation to provide such third party information on this Website,
+and User acknowledges that (whether or not such information is provided on this Website) the Company is not
+responsible for providing any such information or for the accuracy, completeness, legality of the content, tools, and
+resources on this Website. Moreover, the inclusion of such content, tools, and resources does not constitute
+professional advice and may not be construed as a means to circumvent applicable laws.
+3.2 Third Party Sites and Other InformationAs a convenience to User, this Website may contain Content, links, and other information submitted by third parties
+over whom the Company has no control or responsibility. The Company has no obligation to monitor, control, or
+restrict the use of this Website or third party websites accessible via links on this Website. These other sites are not
+under the control of the Company, and User acknowledges that (whether or not such sites are affiliated in any way
+with the Company) the Company is not responsible for the accuracy, copyright compliance, legality, decency, or any
+other aspect of the content of such sites. The inclusion of such a link does not imply endorsement of any site by the
+Company or any association with its operators. Moreover, the Company has no obligation to verify any Content
+submitted by any user or third party or to provide any registration or other information to User concerning any Content.
+3.3 Authority of Website Administrator
+The Company may in its discretion modify, edit, translate, suspend, restrict access to, or terminate the Service and/or
+this Website, these Terms, the Content, or any link at any time without liability or prior notice. The Company may in
+its discretion terminate the browsing of, registration with, and use of this Website by any User at any time without
+liability or prior notice for any reason, including for any breach of these Terms.
+4. User Requirements and Obligations
+4.1 Compliance
+User will comply with all applicable laws in connection with use of the Service and this Website.
+4.2 Unsuitable Conduct
+User will not engage in conduct on or in connection with the Service or this Website that is illegal, misleading,
+infringing, defamatory, obscene, offensive, or otherwise objectionable. User will not cause damage, embarrassment,
+or adverse publicity to the Company.
+4.3 User Cooperation and Notification
+User will cooperate with all reasonable requests of the Company and will notify the Company promptly upon learning
+of any actual or suspected breach of these Terms by User or unauthorized use or abuse of the Service or this Website.
+4.4 Warranty Disclaimers, Limitations on Liability, and Remedies
+All reasonable steps have been taken to ensure the security of your personal information transmitted over the Internet
+using the Website and the Service. However, there remains the remote possibility of data security violations occurring.
+In the event of such breaches, the Company, its associates, subsidiaries and affiliates will not be responsible for any
+damages the User may suffer as a result. The Company and its associates, subsidiaries and affiliates are not responsible
+in any manner for direct, indirect, special or consequential damages, howsoever caused, arising out of the use of the
+Website or the Service.
+Complete confidentiality and security is not yet possible over the Internet. The Company advises you that the Internet
+is not a secure medium and privacy cannot be ensured. The Company and its associates, subsidiaries and affiliates
+will not be responsible for any damages you may suffer if you transmit confidential or sensitive information to us.
+The Service and this Website, its Content, and its links are provided on an “as is” and “as available” basis and are
+used only at the sole risk of User, to the fullest extent permissible by law. The Company disclaims all warranties,
+express or implied, of any kind, regarding the Service (including its forwarding schedule, clearance schedule, delivery
+schedules) and this Website (including its Content, hardware, software, and links), including any express or implied
+warranties as to fitness for a particular purpose, merchantability, title, timeliness, non-infringement, results, accuracy,
+completeness, accessibility, compatibility, security, and freedom from computer virus. IF APPLICABLE LAW DOES
+NOT ALLOW THE EXCLUSION OF SOME OR ALL OF THE ABOVE IMPLIED WARRANTIES TO APPLY
+TO USER, THE ABOVE EXCLUSIONS WILL APPLY TO USER TO THE FULLEST EXTENT PERMITTED BY
+APPLICABLE LAW.
+The Company will not be liable for any damages or losses, including direct, indirect,
+consequential, special, incidental, or punitive damages, including without limitation damages for lost profits, goodwill,
+use, data, or other tangible or intangible losses, in connection with use of the Service, the internet, this Website, its
+Content, or its links, however caused, whether in contract, tort, negligence, strict liability or otherwise, even if the
+Company has been advised of the possibility of such damages. The Company will not be a party to, and will have no
+responsibility or liability for, any transaction negotiated or arranged by a User arising in connection with the Service
+or this Website. In any event, if any of the above provisions in this Section are not enforceable in an applicable
+jurisdiction, the maximum liability of the Company will be limited to, in the sole discretion of the Company, either
+the (1) correction or deletion of any inaccurate Content or link; or (2) refund of any fees (excluding Customs Fees)
+for the Service received by the Company from User.4.6 Indemnification
+User will defend, indemnify, and hold harmless the Company, its officers, directors, employees, and agents, and any
+of its licensors, website partners, or contractors from any demands, claims, damages, liabilities, expenses or harms,
+including attorney’s fees, arising in connection with User’s actions or omissions, including use of the Service or this
+Website, online conduct, breach of these Terms, or dealings or transactions with other persons resulting from use of
+this Website.
+5. Service Requirements and Obligations
+5.1 Authorized and Prohibited Uses
+User may use the Service for shipment of barrels provided that User’s shipments do not violate any laws (including
+export, transportation, and importation laws) in any relevant jurisdiction.
+5.2 Authority to Act as User’s Acceptance & Customs Clearance Agent
+The Service requires that the Company, its subsidiaries, affiliates, and agents accept, transport, import, and (when
+applicable) deliver User’s shipments. By accepting electronically (for example, by clicking “I Agree”), using this
+Website, or using the Service, User authorizes the Company, its subsidiaries, affiliates, and agents to act as User’s
+agent for the purpose of acceptance, transportation (whether by own equipment, or by a third party), importation
+(“Customs Clearance”) and delivery of all shipments sent to the Company’s Pay N Go facility. Moreover, User
+acknowledges and authorizes that the Company may make declarations based on the information provided by the User
+or found within the shipment and can accept valuations on the User’s behalf (with or without User’s knowledge) if
+such required information is not available or forthcoming.
+5.3 Receiving, Acceptance, and Refusal of User’s Shipments
+The Company will receive all shipments intended to be delivered to Pay N Go facility for User. Receiving shipments
+on behalf of User does not constitute the Company’s acceptance of the shipment. Acceptance of shipments is subject
+to inspection by the Company. The Company, is obligated to carry out a visual inspection of the external package.
+Any damage found will be noted, however the Company is not obligated at this stage to verify the integrity of the
+contents. User shall not hold the Company liable for damage to the contents of a shipment where the packing was
+found to be inadequate for the nature of the goods whether the Company ought to have known that such damage was
+likely to occur or not. The Company may in its discretion refuse any shipment and will notify User promptly of the
+reason for refusing the shipment. User will cooperate promptly with all reasonable requests of the Company to resolve
+instances where shipments have been refused. Refused shipments will be held in storage for a maximum of thirty (30)
+days prior to disposal by the Company.
+5.4 Hazardous Materials and Restricted Commodities
+The Service may not be used for restricted commodities including hazardous materials, live animals, perishable items,
+human remains, wet cargo, precious metals, cash, monetary instruments, high value jewellery, manuscripts,
+etc. Hazardous materials include, but are not limited to explosives; gases (compressed, deeply refrigerated, liquefied
+or dissolved under pressure); flammable and combustible liquids; flammable solids; substances liable to spontaneous
+combustion; substances that on contact with water emit flammable gases; oxidizing substances; organic peroxides,
+poisonous (toxic) and infectious substances; radioactive nuclear substances; corrosives; miscellaneous products,
+substances or organisms which may reasonably be considered to be dangerous to life, health, property or the
+environment when handled, offered for transport by air or transported by air; goods that are otherwise by their nature
+or quantity either singly or collectively are liable to endanger life or imperil property. User may not cause or attempt
+to cause the Company to receive, inspect or deliver any package containing hazardous materials. Moreover, User will
+be solely liable for all damages that may arise from any accidents or incidents involving hazardous materials.
+5.5 Import Regulations and Restrictions
+The User acknowledges that the Company is not in the business of providing professional advice regarding applicable
+import laws, quotas, restrictions and permit/licensing requirements. User shall consult the services of the competent
+Authority for advice regarding applicable import laws, quotas, restrictions and permit/licensing requirements and shall
+obtain any applicable permits/licenses that may be necessary to import such shipments prior to sending such shipments
+to the Pay N Go facility. User will cooperate with all reasonable requests of the Company to provide permits or licenses
+where necessary and will notify the Company promptly upon obtaining such permits and licenses. The Company will
+promptly notify the User upon learning of any actual or suspected breaches of any applicable import laws, quotas,restrictions and permit/licensing requirements. The Company will not be a party to, and will have no responsibility or
+liability in cases where User is found in breach of applicable import laws, quotas, restrictions, and permit/licensing
+requirements. User will notify the Company promptly where User’s shipment requires special tax treatments in respect
+to tax exemptions and tax allowances and shall provide all applicable completed supporting documents to the
+Company.
+5.6 Customs Inspection, Valuation, Clearance, Storage and Disposal
+The Service requires that Customs and Border Protection (CBP) and various other external Authorities be given
+unrestricted access to inspect User’s shipments as deemed necessary to safeguard the local border, people, livestock,
+agriculture, etc. By using the Service, User authorizes CBP, its agents and any other Government Authority, and their
+agents to inspect User’s shipments and if necessary, to detain, confiscate, or destroy shipments that pose a threat to
+national security. In such cases each User will defend, indemnify, and hold harmless the Company from any demands,
+claims, damages, liabilities, expenses or harms, including attorney’s fees, arising in connection with inspecting,
+detaining, confiscating, storing, and destroying such shipments. The Company will promptly notify the User upon
+learning of a shipment being detained, confiscated, or destroyed. User will indemnify, and hold harmless the Company
+and their respective officers, directors, employees, and agents from any demands, claims, damages, liabilities,
+expenses or harms, including attorney’s fees, arising in connection with errors or acts of omissions on Customs
+declarations. Moreover, User will indemnify, and hold harmless the Company for any errors made or acts of omissions
+made by Customs in respect to valuation of shipments.
+5.7 Service Rates and Payment Requirements
+The Company’s Service rates are subject to change from time to time. Therefore, User is advised to review these rates
+occasionally or at least every thirty (30) days. The Company will endeavour to post a notice of change to the Service
+rates for a period of thirty (30) days prior to any such change becoming effective. The Company will invoice the User
+on a per package basis for the Service in JMD. Invoices are due upon receipt. User will be allowed a fourteen (14) day
+grace period to settle open invoices, but storage fees will begin to accrue two (2) days after the invoice is delivered to
+User. Packages/shipments with invoices that are not settled within thirty (30) days of the invoice date will be
+considered forfeited by the User and will be disposed of at the sole discretion of the Company. User will defend,
+indemnify, and hold harmless the Company from any demands, claims, damages, liabilities, expenses or harms,
+including attorney’s fees, arising in connection with the disposal of forfeited packages/shipments.
+5.8 Claims Process and Limitations
+User may file a claim on damaged or missing items from a shipment or package. Such claims must be made in writing
+within three (3) days of delivery to the User. User shall provide supporting documentation to substantiate claims, such
+as evidence that the item alleged to be missing was in the shipment, and/or evidence of the value of the damaged or
+missing item. User will cooperate with all reasonable requests of the Company for information pertaining to a filed
+claim. Where the Company accepts liability in relation to a claim, the Company will reimburse User by cheque or
+direct deposit.
+6. Miscellaneous
+6.1 Separate Terms and Conditions
+In connection with User’s use of particular ancillary Services and/or access to Content contained in certain areas of
+this Website, it may be necessary for User to consent to policies or terms and conditions in addition to the Terms set
+forth herein, which User should read carefully before making any use of such Content or areas of this Website. Any
+such additional terms and conditions will not vary or replace these Terms regarding any use of the Service or this
+Website, unless otherwise expressly stated.
+6.2 Privacy Policy
+The Company takes User’s privacy seriously and uses the latest in technology, data storage, backups and independent
+privacy monitoring services to ensure that all transactions are secure and reliable. All information, including
+passwords, credit card information, purchase history and other vital customer detail is encrypted and safe. All account
+data is backed up for additional security and to ensure User’s peace of mind. The Company does not sell, rent or
+otherwise distribute the personal information Users provide to third parties of any kind.
+6.3 Dispute Resolution; Applicable Law and Forum
+With respect to any and all disputes arising out of or in connection with the Service or this Website or these Terms
+(including without limitation the Privacy Policy), the Company and User agree to negotiate in good faith and undertakereasonable efforts to cooperate with one another in order to achieve a mutually satisfactory resolution. The Company
+has no obligation to become involved in any dispute between User and any other person. The Service, this Website,
+these Terms, and any dispute arising in connection therewith shall be exclusively governed by and construed in
+accordance with the laws of Jamaica without regard to conflict of law principles in any other jurisdiction.
+6.4 Modification of Terms, Etc.
+These Terms constitute the complete agreement between the parties with respect to their subject matter and supersede
+any prior agreement or communication. These Terms are subject to change from time to time and are effective
+immediately upon posting. The Company will endeavour to post a notice of any changes to these Terms for a period
+of thirty (30) days following any such modifications. Therefore, User is advised to review these Terms occasionally
+or at least every thirty (30) days. User’s continued use of the Service, this Website, subsequent to the Company’s
+notice of modification of these Terms, shall constitute User´s acceptance of the modified Terms. If any provision of
+these Terms shall be found to be invalid, illegal, or otherwise unenforceable, such finding shall not affect the other
+provisions of these Terms, or the whole of these Terms, but such provision shall be deemed modified to the extent
+necessary to render such provision enforceable, and the rights and obligations of the parties shall be construed and
+enforced accordingly, preserving to the fullest permissible extent the intent and agreements set forth in these Terms.
+The parties hereto are separate and distinct, and this agreement is not intended to create and does not create an agency,
+partnership, or joint venture relationship between the parties nor do these Terms extend to any third party. User´s
+obligations pursuant to these Terms shall survive termination of the Service, this Website, any use of this Website,
+any Content provided by User on this Website, and/or these Terms.</textarea>
+        <div class="form-group">
+            @*@Html.ActionLink("Click Here To View Terms and Conditions", "DownloadPdf", "SignUp")<br />*@
+            @Html.CheckBoxFor(model => model.AgreeToPayandGoConditions)
+            <label>
+                @Html.LabelFor(model => model.AgreeToPayandGoConditions, "I hereby accept Pay And Go Terms.")
+            </label>
+            @Html.ValidationMessageFor(model => model.AgreeToPayandGoConditions)
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <div class="">
+            @*@Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })*@
+            <input type="submit" value="Register For Pay And Go" class="btn btn-primary" />
+        </div>
+    </div>
+}

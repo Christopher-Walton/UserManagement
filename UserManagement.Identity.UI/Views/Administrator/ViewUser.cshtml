@@ -1,0 +1,67 @@
+﻿@model UserManagementAPI.Common.Models.UserReturnModel
+
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h2>User Details</h2>
+
+<span>@ViewBag.Message</span>
+<div>
+    @*<h4>Users</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailConfirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailConfirmed)
+        </dd>
+
+    </dl>
+</div>
+
+<fieldset>
+
+    <legend>
+        User Actions
+    </legend>
+
+    <p>
+        @Html.ActionLink("Set User Password", "SetUserPassword", new { @userId = Model.Id }, new { @class = "btn btn-danger" })|
+        @Html.ActionLink("Update User Roles", "EditUserRoles", new { @userId = Model.Id }, new {@class="btn btn-danger" })|
+        @Html.ActionLink("Resend Confirmation Email", "ResendConfirmationEmail", new { @userId = Model.Id,@userName = Model.UserName,@emailAddress = Model.Email }, new { @class = "btn btn-danger", disabled = @Model.EmailConfirmed ? "disabled" : "" })
+    </p>
+
+
+</fieldset>
+
+
+<p>
+     @Html.ActionLink("Back to List", "Index")
+</p>

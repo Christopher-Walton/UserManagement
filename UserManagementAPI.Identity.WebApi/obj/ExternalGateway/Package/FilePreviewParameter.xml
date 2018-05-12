@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="UserManagementAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Kingston-Wharves-CodeRepos\\UserManagementAPIv2\\UserManagementAPI\.Identity\.WebApi\\obj\\ExternalGateway\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Kingston-Wharves-CodeRepos\\UserManagementAPIv2\\UserManagementAPI\.Identity\.WebApi\\obj\\ExternalGateway\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=132.148.18.209\MSSQLSERVER2012;Initial Catalog=KWLUsers-Prod;Integrated Security=false;UID=UM_User;Password=Password_1234" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Kingston-Wharves-CodeRepos\\UserManagementAPIv2\\UserManagementAPI\.Identity\.WebApi\\obj\\ExternalGateway\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

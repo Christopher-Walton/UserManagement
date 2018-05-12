@@ -1,0 +1,28 @@
+﻿@model UserManagementAPI.Common.Models.UserReturnModel
+
+@{
+    ViewBag.Title = "Sign Up Complete";
+}
+
+<h2>Sign Up Complete</h2>
+
+<h3>
+    Thank you for signing up @Model.FullName.
+</h3>
+
+<h4>
+    @if (ViewBag.IsEmailSent)
+    {
+        <span>
+            Please click on the link in your email (@Model.Email) to confirm your account.
+            It should be in your inbox within the next 15 minutes. Please be sure to check your spam/junk mail folder.
+        </span>
+    }
+    else
+    {
+        <span>
+            Your account was successfully created but there was a problem sending your confirmation email,
+            please contact your system administrator.
+        </span>
+    }
+</h4>

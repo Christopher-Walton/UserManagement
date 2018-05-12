@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Kingston-Wharves-Published-Projects\UserManagementUI</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/07/2016 12:21:26</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/07/2016 12:21:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/13/2016 15:53:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/13/2016 14:13:55</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>06/07/2016 14:39:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>04/13/2016 15:30:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/07/2016 12:21:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/07/2016 12:21:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/07/2016 12:21:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/07/2016 12:21:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/07/2016 12:21:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/07/2016 12:21:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/07/2016 12:21:24</publishTime>
+    </File>
+    <File Include="bin/UserManagement.Identity.UI.dll">
+      <publishTime>06/11/2016 09:08:01</publishTime>
+    </File>
+    <File Include="bin/UserManagement.Identity.UI.pdb">
+      <publishTime>06/11/2016 09:08:01</publishTime>
+    </File>
+    <File Include="bin/UserManagementAPI.Common.dll">
+      <publishTime>06/11/2016 08:52:16</publishTime>
+    </File>
+    <File Include="bin/UserManagementAPI.Common.pdb">
+      <publishTime>06/11/2016 08:52:16</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/07/2016 12:21:27</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Content/images/Kingston-Wharves-Logo.png">
+      <publishTime>03/15/2016 14:27:21</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/08/2016 09:40:35</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/07/2016 12:21:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/07/2016 12:21:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/07/2016 12:21:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/07/2016 12:21:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/07/2016 12:21:30</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/07/2016 12:21:26</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/07/2016 12:21:28</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/07/2016 12:21:28</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/07/2016 12:21:26</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="Views/Reset/PasswordResetCompleted.cshtml">
+      <publishTime>06/10/2016 10:08:10</publishTime>
+    </File>
+    <File Include="Views/Reset/RequestResetPasswordEmail.cshtml">
+      <publishTime>06/10/2016 10:57:19</publishTime>
+    </File>
+    <File Include="Views/Reset/ResetEmailSent.cshtml">
+      <publishTime>06/09/2016 14:37:02</publishTime>
+    </File>
+    <File Include="Views/Reset/ResetPassword.cshtml">
+      <publishTime>06/10/2016 10:15:09</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/10/2016 12:25:57</publishTime>
+    </File>
+    <File Include="Views/SignUp/EmailConfirmed.cshtml">
+      <publishTime>06/09/2016 10:38:54</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignIn.cshtml">
+      <publishTime>06/10/2016 14:19:56</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUp.cshtml">
+      <publishTime>06/10/2016 14:35:07</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUpComplete.cshtml">
+      <publishTime>06/09/2016 09:08:29</publishTime>
+    </File>
+    <File Include="Views/SignUp/_SignUpCompany.cshtml">
+      <publishTime>06/10/2016 15:51:03</publishTime>
+    </File>
+    <File Include="Views/SignUp/_SignUpIndividual.cshtml">
+      <publishTime>06/10/2016 14:39:52</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/07/2016 12:21:13</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/11/2016 09:08:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\bin\Release\UserManagementAPI.Common.dll.config
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\bin\Release\UserManagementAPI.Common.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\bin\Release\UserManagementAPI.Common.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\obj\Release\UserManagementAPI.Common.csprojResolveAssemblyReference.cache
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\obj\Release\UserManagementAPI.Common.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.Common\obj\Release\UserManagementAPI.Common.pdb

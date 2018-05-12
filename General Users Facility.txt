@@ -1,0 +1,31 @@
+- General Users
+
+- 1) Assign Representatives To Your Account,When Your are The Primary User (Claims Based Authentication)
+- 2) Update Your Profile Information
+
+- Administration
+
+- 3) Resend Confirmation Email
+- 4) Assign Users To Administration Roles
+- 5) Reset a password on the user's behalf
+
+- User Interface
+
+- 6)  Consistent Coloring
+- 7)  Theming
+- 8)  Layout Issues
+- 9)  Proper Alerts & Images
+-10)  Fix Logo Issue
+
+- Documentation
+
+- 11) Produce some formal documentation.
+
+Item 1) 
+
+Will entail the following :
+
+- Adding an additional field to the representatives table to indicate who is a primary.
+- Adding an endpoint that will accept an email addressing representing a person in the system, which will add the person as a company.
+- Adding a claim authorization on the endpoint to only allow the primary representative to add others.
+- Adding a category for the users (Individual,Company Representative,Agent).

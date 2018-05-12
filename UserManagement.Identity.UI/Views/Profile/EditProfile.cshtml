@@ -1,0 +1,54 @@
+﻿@model UserManagementAPI.Common.Models.EditUserModel
+
+@{
+    ViewBag.Title = "Edit Profile Details";
+}
+<script>
+
+    $(document).ready(function () {
+
+        //initialize phone masking
+        $('.phone-number-formatting').mask('000-000-0000');
+
+    });//end ready
+
+</script>
+<h2>Edit Profile Details</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.UserId)
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.FirstName)
+        @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.FirstName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.LastName)
+        @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.LastName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.MobileNumber)
+
+        @Html.TextBoxFor(model => model.MobileNumber, new
+            {
+                @class = "form-control phone-number-formatting",
+                @placeholder = "876-345-1234",
+                @data_toggle = "tooltip",
+                @data_placement = "right",
+                @title = "Must be a valid phone number and must be in the form ###-###-####"
+            })
+        @Html.ValidationMessageFor(model => model.MobileNumber)
+    </div>
+
+    <div class="form-group">
+        <div class="">
+            @Html.ActionLink("Back to My Profile", "MyProfile", null, new { @class = "btn btn-default" })
+            <input type="submit" value="Update Profile" class="btn btn-danger" />
+        </div>
+    </div>
+}

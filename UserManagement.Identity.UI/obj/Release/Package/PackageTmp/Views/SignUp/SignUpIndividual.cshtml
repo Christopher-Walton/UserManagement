@@ -1,0 +1,121 @@
+﻿@model UserManagementAPI.Common.Models.IndividualRegistration
+
+@{
+    ViewBag.Title = "Signup Individual";
+}
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.input-validation-error').parents('.form-group').addClass('has-error');
+        $('.field-validation-error').addClass('text-danger');
+
+        //initialize tooltips
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<h2>Individual Signup</h2>
+
+@using (Html.BeginForm("SignUpIndividual", "SignUp", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="text-danger">
+        @Html.ValidationSummary()
+    </div>
+
+    <fieldset>
+        <legend>Individual Information</legend>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.Email)
+            @Html.TextBoxFor(model => model.PrimaryUser.Email, new
+             {
+                 @class = "form-control",
+                 @data_toggle = "tooltip",
+                 @data_placement = "right",
+                 @title = "Must be a valid email address in the form: " +
+                          "johnbrown@gmail.com",
+                 @placeholder = "johnbrown@gmail.com"
+             })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.Email)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.Username)
+            @Html.TextBoxFor(model => model.PrimaryUser.Username, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.Username)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.FirstName)
+            @Html.TextBoxFor(model => model.PrimaryUser.FirstName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.FirstName)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.LastName)
+            @Html.TextBoxFor(model => model.PrimaryUser.LastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.LastName)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.MobileNumber)
+            @Html.TextBoxFor(model => model.PrimaryUser.MobileNumber, new
+            {
+               @class = "form-control",
+               @placeholder = "876-345-1234",
+               @data_toggle = "tooltip",
+               @data_placement = "right",
+               @title = "Must be a valid phone number and must be in the form ###-###-####"
+            })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.MobileNumber)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.Password)
+            @Html.PasswordFor(model => model.PrimaryUser.Password, new
+            {
+                @class = "form-control",
+                @data_toggle = "tooltip",
+                @data_placement = "right",
+                @title = "Must contain the following: at least one symbol," +
+                         "at least one uppercase letter,at least one lowercase letter and at least one digit.The password should be at least 8 characters long."
+            })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.Password)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrimaryUser.ConfirmPassword)
+            @Html.PasswordFor(model => model.PrimaryUser.ConfirmPassword, new
+            {
+                @class = "form-control",
+                @data_toggle = "tooltip",
+                @data_placement = "right",
+                @title = "Must contain the following: at least one symbol," +
+                         "at least one uppercase letter,at least one lowercase letter and at least one digit.The password should be at least 8 characters long."
+            })
+            @Html.ValidationMessageFor(model => model.PrimaryUser.ConfirmPassword)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address)
+            @Html.TextBoxFor(model => model.Address, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.TRN)
+            @Html.TextBoxFor(model => model.TRN, new
+             {
+                 @class = "form-control",
+                 @placeholder = "123-456-789",
+                 @data_toggle = "tooltip",
+                 @data_placement = "right",
+                 @title = "Must be a valid TRN and in the format ###-###-###"
+             })
+            @Html.ValidationMessageFor(model => model.TRN)
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <div class="">
+            @*@Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })*@
+            <input type="submit" value="Register" class="btn btn-danger" />
+        </div>
+    </div>
+}

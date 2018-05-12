@@ -1,0 +1,17 @@
+Identity Core 2.2.1
+EntityFramework 6.1.3
+Microsoft.AspNet.Identity.EntityFramework -Version 2.2.1
+Microsoft.Owin.Security.OAuth -Version 3.0.1
+Microsoft.Owin.Security.Cookies -Version 3.0.1
+Microsoft.AspNet.Identity.Owin -Version 2.2.1
+Dapper -Version 1.42.0
+Microsoft.AspNet.WebApi -Version 5.2.3
+Ninject.Web.WebApi -Version 3.2.4  -- This was removed
+Ninject.Web.Common.WebHost -Version 3.2.3 -- This was removed
+
+Moq,AutoFixture,xunit
+
+Swashbuckle -Version 5.2.1
+
+Ninject.Web.WebApi -Version 3.2.4
+Ninject.Web.WebApi.WebHost -Version 3.2.4

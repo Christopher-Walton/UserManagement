@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHvr2IsXi4kejw13mFfyfxQAAAAACAAAAAAADZgAAwAAAABAAAAAck+BEVjK1HhuhMDqzZeflAAAAAASAAACgAAAAEAAAAEofQDga915QMLMnZKcgxvYgAAAAosO88S4O4vMYSmu9hGPbcutdk6qhGHEPSfmOYzcxmlMUAAAAnwWLSHb0lVJ0UhfTz+QPh+AFCZ0=</EncryptedPassword>
+    <_PublishTargetUrl>ftp://192.168.16.152/UserManagementUI_QA_V_1_0</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/13/2016 15:53:32</publishTime>
+    </File>
+    <File Include="bin/MvcCheckBoxList.dll">
+      <publishTime>07/28/2016 08:40:02</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/13/2016 14:13:55</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>07/20/2016 12:26:06</publishTime>
+    </File>
+    <File Include="bin/NLog.Web.dll">
+      <publishTime>07/20/2016 12:26:16</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>06/11/2016 12:40:36</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>04/13/2016 15:30:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/11/2016 12:40:35</publishTime>
+    </File>
+    <File Include="bin/UserManagement.Identity.UI.dll">
+      <publishTime>12/13/2016 12:48:12</publishTime>
+    </File>
+    <File Include="bin/UserManagement.Identity.UI.pdb">
+      <publishTime>12/13/2016 12:48:12</publishTime>
+    </File>
+    <File Include="bin/UserManagementAPI.Common.dll">
+      <publishTime>12/13/2016 12:48:11</publishTime>
+    </File>
+    <File Include="bin/UserManagementAPI.Common.pdb">
+      <publishTime>12/13/2016 12:48:11</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/11/2016 12:40:36</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/15/2016 10:25:26</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/15/2016 10:25:27</publishTime>
+    </File>
+    <File Include="Content/images/Kingston-Wharves-Logo.png">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/28/2016 12:29:45</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/11/2016 12:40:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/11/2016 12:40:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/11/2016 12:40:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/11/2016 12:40:34</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/11/2016 12:40:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>07/20/2016 12:36:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/28/2016 08:40:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mask.min.js">
+      <publishTime>04/03/2016 11:52:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/28/2016 14:55:35</publishTime>
+    </File>
+    <File Include="Views/Account/AdministratorMenu.cshtml">
+      <publishTime>07/29/2016 14:15:20</publishTime>
+    </File>
+    <File Include="Views/Account/LoggedInStatus.cshtml">
+      <publishTime>07/25/2016 15:06:03</publishTime>
+    </File>
+    <File Include="Views/Account/SignIn.cshtml">
+      <publishTime>07/29/2016 12:15:06</publishTime>
+    </File>
+    <File Include="Views/Account/Unauthorized.cshtml">
+      <publishTime>07/23/2016 14:31:14</publishTime>
+    </File>
+    <File Include="Views/Administrator/EditUserRoles.cshtml">
+      <publishTime>07/29/2016 09:19:40</publishTime>
+    </File>
+    <File Include="Views/Administrator/Index.cshtml">
+      <publishTime>07/29/2016 14:17:25</publishTime>
+    </File>
+    <File Include="Views/Administrator/SetUserPassword.cshtml">
+      <publishTime>07/28/2016 14:56:31</publishTime>
+    </File>
+    <File Include="Views/Administrator/ViewUser.cshtml">
+      <publishTime>07/28/2016 15:39:03</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/29/2016 09:15:54</publishTime>
+    </File>
+    <File Include="Views/Profile/ChangePassword.cshtml">
+      <publishTime>07/29/2016 12:08:40</publishTime>
+    </File>
+    <File Include="Views/Profile/EditProfile.cshtml">
+      <publishTime>07/29/2016 11:56:49</publishTime>
+    </File>
+    <File Include="Views/Profile/MyProfile.cshtml">
+      <publishTime>07/27/2016 12:16:17</publishTime>
+    </File>
+    <File Include="Views/Reset/PasswordResetCompleted.cshtml">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Views/Reset/RequestResetPasswordEmail.cshtml">
+      <publishTime>07/21/2016 11:01:13</publishTime>
+    </File>
+    <File Include="Views/Reset/ResetEmailSent.cshtml">
+      <publishTime>08/02/2016 09:48:10</publishTime>
+    </File>
+    <File Include="Views/Reset/ResetPassword.cshtml">
+      <publishTime>08/02/2016 09:39:32</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/26/2016 11:04:39</publishTime>
+    </File>
+    <File Include="Views/SignUp/EmailConfirmed.cshtml">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignIn.cshtml">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignInComplete.cshtml">
+      <publishTime>06/15/2016 09:13:16</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUp.cshtml">
+      <publishTime>07/29/2016 12:13:07</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUpCompany.cshtml">
+      <publishTime>07/26/2016 10:55:23</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUpComplete.cshtml">
+      <publishTime>07/26/2016 12:53:08</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUpIndividual.cshtml">
+      <publishTime>07/27/2016 14:01:38</publishTime>
+    </File>
+    <File Include="Views/SignUp/SignUpPayAndGo.cshtml">
+      <publishTime>12/13/2016 12:46:54</publishTime>
+    </File>
+    <File Include="Views/SignUp/_SignUpCompany.cshtml">
+      <publishTime>06/14/2016 09:46:27</publishTime>
+    </File>
+    <File Include="Views/SignUp/_SignUpIndividual.cshtml">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Views/SignUp/_UserForm.cshtml">
+      <publishTime>06/15/2016 09:20:20</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/28/2016 08:45:35</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/11/2016 12:40:33</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/13/2016 12:48:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

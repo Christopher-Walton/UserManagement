@@ -1,0 +1,31 @@
+﻿@model UserManagementAPI.Common.Models.UserDataModel
+
+@{
+    ViewBag.Title = "Your Profile";
+}
+
+<h2>Profile Information</h2>
+
+<p>You have signed in successfully.</p>
+
+<span>@Html.LabelFor(model=> model.FullName): @Html.DisplayFor(model => model.FullName)</span>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Consignees Represented</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string customerName in Model.CustomerNames)
+        {
+            <tr> <td>
+                    @customerName
+            <td></tr>
+        }
+    </tbody>
+</table>
+
+
+

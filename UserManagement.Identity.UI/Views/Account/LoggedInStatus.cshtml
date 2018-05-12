@@ -1,0 +1,8 @@
+﻿@if (ViewBag.IsLoggedIn)
+{
+    <li> @Html.ActionLink((string)ViewBag.SignOutMessage, "SignOut", "Account")</li>
+}
+else
+{
+    <li> @Html.ActionLink("Sign In", "SignIn", "Account") </li>
+}

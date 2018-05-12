@@ -1,0 +1,16 @@
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\UserManagementAPI.DataAccess.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\UserManagementAPI.DataAccess.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\Dapper.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\UserManagementAPI.Common.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\UserManagementAPI.Domain.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\UserManagementAPI.Common.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\UserManagementAPI.Domain.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\Dapper.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\Dapper.xml
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\obj\Release\UserManagementAPI.DataAccess.csprojResolveAssemblyReference.cache
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\obj\Release\UserManagementAPI.DataAccess.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\obj\Release\UserManagementAPI.DataAccess.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\NLog.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\NLog.Web.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\NLog.xml
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\Release\NLog.Web.xml

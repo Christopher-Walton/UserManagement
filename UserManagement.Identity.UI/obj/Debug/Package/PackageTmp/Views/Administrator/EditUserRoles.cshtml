@@ -1,0 +1,28 @@
+﻿
+@model UserManagementAPI.Common.Models.RolesViewModel
+
+@{
+    ViewBag.Title = "Edit User Roles";
+}
+
+<h2>Edit User Roles</h2>
+
+<h3>@ViewBag.PersonName</h3>
+<hr />
+
+<p>Please select the roles for the user below.</p>
+
+@using (Html.BeginForm())
+{
+    
+    @Html.CheckBoxListFor(x => x.PostedRoles.RoleIds,  // checkbox list name, 'PostedCities.CityIDs' in this case
+                      x => x.AvailableRoles,           // List<City>()
+                      x => x.Name,                     // City.Id
+                      x => x.Name,                  // City.Name
+                      x => x.SelectedRoles)        // L
+
+
+    <div>
+        <input type="submit" value="Update Roles" class="btn btn-danger" />
+    </div>
+}

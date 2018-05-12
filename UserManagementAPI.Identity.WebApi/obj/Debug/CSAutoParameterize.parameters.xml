@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=132.148.18.209\MSSQLSERVER2012;Initial Catalog=KWLUsers-Prod;Integrated Security=false;UID=UM_User;Password=Password_1234" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Kingston-Wharves-CodeRepos\\UserManagementAPIv2\\UserManagementAPI\.Identity\.WebApi\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "My Profile";
+}
+
+<h2>Manage Your Profile</h2>
+
+@if(ViewBag.Message != null && !string.IsNullOrEmpty(ViewBag.Message))
+{
+    <h4> @ViewBag.Message </h4>
+}
+
+<p>Please click an option below.</p>
+<hr />
+@Html.ActionLink("Change Password", "ChangePassword", null, new { @class = "btn btn-danger" })
+
+@Html.ActionLink("Edit Profile Information", "EditProfile", new {@id = ViewBag.UserId }, new { @class = "btn btn-danger" })

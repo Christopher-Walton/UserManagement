@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagement.Identity.UI\obj\ExternalGateway-QA\Package\PackageTmp" />
+  <setAcl path="C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagement.Identity.UI\obj\ExternalGateway-QA\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagement.Identity.UI\obj\ExternalGateway-QA\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

@@ -1,0 +1,12 @@
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\UserManagementAPI.DataAccess.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\UserManagementAPI.DataAccess.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\Dapper.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\UserManagementAPI.Common.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\UserManagementAPI.Domain.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\UserManagementAPI.Common.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\UserManagementAPI.Domain.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\Dapper.pdb
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\bin\ExternalGateway-QA\Dapper.xml
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\obj\ExternalGateway-QA\UserManagementAPI.DataAccess.csprojResolveAssemblyReference.cache
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\obj\ExternalGateway-QA\UserManagementAPI.DataAccess.dll
+C:\Kingston-Wharves-CodeRepos\UserManagementAPIv2\UserManagementAPI.DataAccess\obj\ExternalGateway-QA\UserManagementAPI.DataAccess.pdb

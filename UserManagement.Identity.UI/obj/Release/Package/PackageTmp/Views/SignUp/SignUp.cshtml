@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Sign Up";
+}
+
+<h2>Sign Up</h2>
+
+<script>
+
+    @*$(document).ready(function () {
+        
+        var signUpRadioButton = $(".signUpRad").click(function () {
+
+            //alert($(this).val());
+            var value = $(this).val();
+            $.ajax({
+                url: "@Url.Action("SignUpDisplay", "SignUp")",
+                type: 'GET',
+                data: { signUpType: value },
+            //beforeSend: function () { $('#loadingImage').show(); },
+            //complete: function () { $('#loadingImage').hide(); },
+            traditional: true
+        }).done(function (partialViewResult) {
+            $("#signUpForm").html(partialViewResult);
+            //$eventSelect.val(null).trigger("change");
+        });
+
+        });
+    });*@
+</script>
+
+<p>Please click an option below.</p>
+
+@Html.ActionLink("Company Sign Up", "SignUpCompany", null, new { @class="btn btn-danger"}) | @Html.ActionLink("Individual Sign Up", "SignUpIndividual", null, new { @class = "btn btn-danger" })
+
+@*@Html.Label("Sign Up Type") : @Html.Label("Company") @Html.RadioButton("SignUpType", "Company", new { @class="signUpRad" }) @Html.Label("Individual") @Html.RadioButton("SignUpType", "Individual", new { @class = "signUpRad" })*@
+

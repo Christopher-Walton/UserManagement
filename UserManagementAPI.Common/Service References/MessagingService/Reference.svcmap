@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="140b6f6e-8a08-46ed-85ff-57430cc80fae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://BELepay.systems:8095/Messaging.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Messaging.xsd" MetadataType="Schema" ID="d9374b39-1320-4cbf-bab0-ca48e7c2dd82" SourceId="1" SourceUrl="https://BELepay.systems:8095/Messaging.svc?xsd=xsd0" />
+    <MetadataFile FileName="Messaging1.xsd" MetadataType="Schema" ID="eb3a9c29-964d-4ad3-8f8e-f57df627ce27" SourceId="1" SourceUrl="https://BELepay.systems:8095/Messaging.svc?xsd=xsd3" />
+    <MetadataFile FileName="MessageManager.wsdl" MetadataType="Wsdl" ID="0984514b-586e-44b8-8de3-48b6348015ee" SourceId="1" SourceUrl="https://BELepay.systems:8095/Messaging.svc?wsdl" />
+    <MetadataFile FileName="Messaging2.xsd" MetadataType="Schema" ID="8a59c14b-cebd-487b-af1c-9e0dec3352bd" SourceId="1" SourceUrl="https://BELepay.systems:8095/Messaging.svc?xsd=xsd1" />
+    <MetadataFile FileName="Messaging3.xsd" MetadataType="Schema" ID="8c435542-282f-4ece-927f-ab63cec828c6" SourceId="1" SourceUrl="https://BELepay.systems:8095/Messaging.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
